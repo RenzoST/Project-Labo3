@@ -215,3 +215,39 @@ body {
   color: var(--tertiary-color);
   text-shadow: none;
 }
+
+@media (max-width: 480px) {
+  .presentacion-menu h1 {
+    font-size: 40px;
+  }
+
+  .presentacion-menu p {
+    font-size: 20px;
+  }
+
+  .menu article h2 {
+    font-size: 30px;
+  }
+
+  .menu article .cart {
+    width: 250px;
+    height: 350px;
+  }
+
+  .menu article .cart img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .menu article .cart h3 {
+    font-size: 20px;
+  }
+
+  .menu article .cart .descripcion-comida {
+    font-size: 14px;
+  }
+
+  .menu article .cart .precio {
+    font-size: 18px;
+  }
+}
