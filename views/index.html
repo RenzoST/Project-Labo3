@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ZORAN'T</title>
+    <link rel="icon" href="../public/imgs/Logo.png" type="image/png" />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="cabecera">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" id="open" class="bars"></label>
+      <nav class="navegacion">
+        <label for="menu-toggle" id="close" class="bars-nav"></label>
+        <ul class="lista">
+          <li class="items"><a href="./menu.html">MENU</a></li>
+          <li class="container-logo">
+            <a href="/views/"
+              ><img src="../public/imgs/Logo.png" alt="Logo Restaurante"
+            /></a>
+          </li>
+          <li class="items"><a href="#contacto">CONTACTAR</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container-main">
+      <section class="first-view">
+        <article class="presentacion cortina">
+          <h1>ZORAN'T</h1>
+          <p>
+            En el corazón de París, bajo el mágico resplandor de la Torre
+            Eiffel, se encuentra Gusteau's, el restaurante que ha conquistado
+            los corazones y paladares de todos aquellos que buscan una
+            experiencia culinaria inolvidable.
+          </p>
+        </article>
+        <a href="#second-section" class="arrow-down"
+          ><img src="../public/imgs/arrow-down.svg" alt=""
+        /></a>
+      </section>
+      <section id="second-section" class="second-view">
+        <article class="article-history cortina">
+          <div class="img-container">
+            <img src="/public/imgs/restaurante-2.jpg" alt="" />
+          </div>
+          <div class="cont-history">
+            <h2>Nuestra Historia</h2>
+            <p>
+              Fundado por el renombrado chef Auguste Gusteau, conocido por su
+              lema "Cualquiera puede cocinar", Gusteau's es un lugar donde la
+              pasión por la cocina y la creatividad se encuentran. Tras la
+              inesperada influencia de un talentoso ratón, nuestro restaurante
+              ha reimaginado el concepto de la alta cocina, llevando la
+              gastronomía a nuevas alturas con un toque de magia y sorpresas.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="third-view">
+        <article class="article-cocina cortina">
+          <div class="cont-cocina">
+            <h2>Nuestra Cocina</h2>
+            <p>
+              En Gusteau's, nos enorgullecemos de ofrecer una experiencia
+              culinaria única. Nuestro menú está diseñado para deleitar todos
+              los sentidos, con platos que van desde clásicos franceses como el
+              Coq au Vin hasta innovadoras interpretaciones que desafían las
+              expectativas. Utilizamos solo los ingredientes más frescos y de la
+              más alta calidad para crear obras maestras que reflejan la esencia
+              de la cocina francesa.
+            </p>
+          </div>
+          <div class="img-container">
+            <img src="/public/imgs/cocina.jpg" alt="" />
+          </div>
+        </article>
+      </section>
+      <section class="fourth-view">
+        <article class="article-service cortina">
+          <div class="cont-service-img">
+            <img src="../public/imgs/restaurante-3.jpg" alt="" />
+          </div>
+          <div class="cont-text-service">
+            <h2>Ambiente y Servicio</h2>
+            <p>
+              Nuestro restaurante combina la sofisticación y la calidez en un
+              ambiente elegante pero acogedor. Desde el diseño interior hasta el
+              servicio personalizado, cada detalle ha sido cuidadosamente
+              elaborado para que te sientas como en casa. Nuestro equipo de
+              profesionales está dedicado a hacer que tu visita sea memorable,
+              ofreciéndote un servicio atento y amable.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="fifth-view">
+        <article class="article-visit cortina">
+          <div class="cont-visit-img">
+            <img src="../public/imgs/frente.jpg" alt="" />
+          </div>
+          <div class="cont-visit">
+            <h2>Visitanos</h2>
+            <p>
+              Te invitamos a ser parte de esta experiencia mágica y deliciosa.
+              Ven a Gusteau's y deja que te llevemos en un viaje gastronómico
+              lleno de sorpresas y deleites. ¡Porque en Gusteau's, cualquiera
+              puede disfrutar de una comida excepcional!
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="contacto" class="form-contacto">
+        <h3>¡Contáctanos!</h3>
+        <form action="/submit" method="POST">
+          <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div>
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+
+          <div>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        <img src="../public/imgs/LogoCF.jpg" alt="Logo Restaurante" />
+      </div>
+      <div class="footer-info">
+        <p>
+          Gusteau's <br />
+          5 Rue de la Paix, 75002 Paris, Francia <br />
+          Teléfono: +33 1 43 16 22 22
+        </p>
+      </div>
+      <div class="footer-social">
+        <a href=""
+          ><img src="../public/imgs/facebook-icon.svg" alt="Facebook"
+        /></a>
+        <a href=""
+          ><img src="../public/imgs/instagram-icon.svg" alt="Instagram"
+        /></a>
+        <a href=""><img src="../public/imgs/x_icon.svg" alt="Twitter" /></a>
+      </div>
+    </footer>
+  </body>
+</html>

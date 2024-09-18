@@ -1,0 +1,217 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ebc06a;
+  --tertiary-color: #ffffff;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container-main-menu {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.first-view-menu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imgs/cocina.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cortina {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.presentacion-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.presentacion-menu h1 {
+  color: var(--secondary-color);
+  font-size: 70px;
+  text-shadow: var(--primary-color) 6px 3px 5px;
+  margin-bottom: 20px;
+}
+
+.presentacion-menu p {
+  color: var(--tertiary-color);
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+}
+
+.sect-menu {
+  width: 100vw;
+}
+
+.separador {
+  width: 100%;
+  height: 150px;
+  background-color: var(--primary-color);
+  box-shadow: var(--primary-color) -5px 0px 10px 10px;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu .destacados-title {
+  color: var(--secondary-color);
+}
+
+.menu article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.menu article h2 {
+  width: 100%;
+  color: var(--primary-color);
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 900;
+  text-shadow: var(--primary-color) 2px 1px 3px;
+}
+
+.menu article .cart {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: var(--secondary-color) 0px 0px 10px 5px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.menu article .cart .cont-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+
+.menu article .cart img {
+  width: 230px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px 0;
+  transition: all 0.5s;
+}
+
+.menu article .cart h3 {
+  color: var(--tertiary-color);
+  font-size: 24px;
+  margin: 10px 0;
+  transition: all 0.5s;
+}
+
+.menu article .cart .descripcion-comida {
+  color: var(--tertiary-color);
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+  padding: 0 5px;
+}
+
+.menu article .cart .precio {
+  color: #0dc90d;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.menu article .cart:hover {
+  transform: scale(1.06);
+  box-shadow: var(--primary-color) 0px 0px 10px 5px;
+}
+
+.menu article .cart:hover .cont-info {
+  background-color: var(--secondary-color);
+  box-shadow: var(--primary-color) 0px 0px 10px 5px;
+}
+
+.menu article .cart:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.menu article .cart:hover h3 {
+  color: var(--tertiary-color);
+  text-shadow: var(--primary-color) 0px 0px 5px;
+
+  transition: all 0.5s;
+}
+
+.menu article .cart:hover .descripcion-comida {
+  font-size: 18px;
+  padding: 0 10px;
+  color: var(--primary-color);
+  text-shadow: var(--tertiary-color) 0px 0px 5px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.menu article .cart:hover .precio {
+  text-shadow: var(--primary-color) 0px 0px 5px;
+  font-size: 25px;
+  color: #00ff00;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+/* Destacados */
+.menu article .cart-destacada {
+  background-color: var(--tertiary-color);
+}
+
+.menu article .cart-destacada .descripcion-comida {
+  color: var(--primary-color);
+}
+
+.menu article .cart-destacada .cont-info {
+  background-color: var(--secondary-color);
+}
+
+.menu article .cart-destacada h3 {
+  color: var(--primary-color);
+}
+
+.menu article .cart-destacada:hover .cont-info {
+  background-color: var(--primary-color);
+}
+
+.menu article .cart-destacada:hover .descripcion-comida {
+  color: var(--tertiary-color);
+  text-shadow: none;
+}
